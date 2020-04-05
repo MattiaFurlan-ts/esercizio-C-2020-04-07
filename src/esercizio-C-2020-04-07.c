@@ -35,6 +35,7 @@ char *make_random_word (char *word)
         if (i < c - 1) //Spazio fra le parole
             strcat (random_word, " ");
     }
+    free (words);
     return random_word;
 }
 
